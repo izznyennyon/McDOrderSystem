@@ -72,6 +72,7 @@
       <DependentUpon>OnlineMcDDb.mdf</DependentUpon>
     </Content>
     <Content Include="Global.asax" />
+    <Content Include="Images\mcd-logo.png" />
     <Content Include="Styles\StyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>

@@ -6,7 +6,8 @@
 <head runat="server">
     <title>McDonald's</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width"
+    <meta name="viewport" content="width-device-width, initial-scale=" />
+    <link href="Styles/StyleSheet.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -14,6 +15,21 @@
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                <!-- Logo Bar Dekat Sini -->
+                <nav class="navbar title">
+                    <div class="container-fluid d=flex justify-content-center">
+                        <img src="Images/mcd-logo.png" class="navbar-logo" />
+                    </div>
+                </nav>
+
+                <!-- Bar Kuning -->
+                <nav class="navbar">
+                    <div class="container-fluid d-flex justify-content-between align-items-center">
+                        <span class="navbar-brand mb-0 h1">Welcome back, Haziq!</span>
+                        <a href="#" class="view-cart-button">View Cart<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </nav>
             </asp:ContentPlaceHolder>
         </div>
     </form>
