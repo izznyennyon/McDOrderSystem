@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\333\\OneDrive - Universiti Kuala Lumpur\\Desktop\\Web Application Development\\Assignment\\McDOrderSystem\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0DC6352C-CBDC-4787-B066-7FE8B36FB806}|McDOrderSystem\\McDOrderSystem.csproj|c:\\users\\333\\onedrive - universiti kuala lumpur\\desktop\\web application development\\assignment\\mcdordersystem\\mcdordersystem\\mcd.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{0DC6352C-CBDC-4787-B066-7FE8B36FB806}|McDOrderSystem\\McDOrderSystem.csproj|solutionrelative:mcdordersystem\\mcd.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,19 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Mcd.Master",
-              "DocumentMoniker": "C:\\Users\\333\\OneDrive - Universiti Kuala Lumpur\\Desktop\\Web Application Development\\Assignment\\McDOrderSystem\\McDOrderSystem\\Mcd.Master",
-              "RelativeDocumentMoniker": "McDOrderSystem\\Mcd.Master",
-              "ToolTip": "C:\\Users\\333\\OneDrive - Universiti Kuala Lumpur\\Desktop\\Web Application Development\\Assignment\\McDOrderSystem\\McDOrderSystem\\Mcd.Master",
-              "RelativeToolTip": "McDOrderSystem\\Mcd.Master",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-05-29T02:09:56.137Z",
-              "EditorCaption": ""
             }
           ]
         }
