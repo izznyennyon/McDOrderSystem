@@ -1,0 +1,93 @@
+.navbar {
+  background-color: #FFBA0D; /* Red navbar */
+}
+
+.navbar-logo {
+  width: auto;  /* Set width to 100px */
+  height: 100px; /* Set height to 100px */
+}
+
+.categories-menu {
+  background-color: #d3d3d3; /* Light gray background */
+  padding: 10px;
+  height: 100vh; /* Set height to full viewport height */
+  position: relative; /* Fix the position to the viewport */
+  left: 0; /* Stick it to the left */
+  top: 0; /* Stick it to the top */
+  display: flex;
+  flex-direction: column;
+}
+
+.category-links {
+  flex-grow: 1;
+}
+
+.category-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.category-link:hover {
+  color: #FFBA0D;
+}
+
+.bottom-link {
+  margin-top: auto;
+}
+
+
+.category-link:hover {
+  color: #FFBA0D;
+}
+
+.bottom-link {
+  margin-top: auto;
+}
+
+
+.title {
+  background-color: #DB0007; /* Dark gray background */
+  color: #FFBA0D;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.menu-section {
+  background-color: #808080; /* Dark gray background */
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-section h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.image-container {
+  background-color: #d3d3d3; /* Light gray background */
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  background-color: #ff6f61; /* Red footer */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.view-cart-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #333; /* Set icon color */
+  text-decoration: none;
+}
+
+.view-cart-button:hover {
+  color: #FFBA0D; /* Change icon color on hover */
+}
