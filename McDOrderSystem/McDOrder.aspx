@@ -84,13 +84,13 @@
                 <asp:Label ID="lblAmountRounded" runat="server" Text=""></asp:Label><br />
             </p>
         </div>
-        <asp:SqlDataSource ID="SqlDataSourceCategories" runat="server" ConnectionString="<%$ ConnectionStrings:cubaan2 %>" SelectCommand="SELECT * FROM [Categories] ORDER BY [CatTitle]"></asp:SqlDataSource>
-        <asp:SqlDataSource ID="SqlDataSourceItems" runat="server" ConnectionString="<%$ ConnectionStrings:cubaan2 %>" SelectCommand="SELECT * FROM [Items] WHERE ([CatId] = @CatId)">
+        <asp:SqlDataSource ID="SqlDataSourceCategories" runat="server" ConnectionString="<%$ ConnectionStrings:connMcD %>" SelectCommand="SELECT * FROM [Categories] ORDER BY [CatTitle]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSourceItems" runat="server" ConnectionString="<%$ ConnectionStrings:connMcD %>" SelectCommand="SELECT * FROM [Items] WHERE ([CatId] = @CatId)">
             <SelectParameters>
                 <asp:ControlParameter ControlID="ddlCategory" Name="CatId" PropertyName="SelectedValue" Type="Int32" />
             </SelectParameters>
         </asp:SqlDataSource>
-        <asp:SqlDataSource ID="SqlDataSourceCart" runat="server" ConnectionString="<%$ ConnectionStrings:cubaan2 %>" SelectCommand="spSalesGetItems" SelectCommandType="StoredProcedure">
+        <asp:SqlDataSource ID="SqlDataSourceCart" runat="server" ConnectionString="<%$ ConnectionStrings:connMcD %>" SelectCommand="spSalesGetItems" SelectCommandType="StoredProcedure">
             <SelectParameters>
                 <asp:ControlParameter ControlID="lblSalesId" Name="salesid" PropertyName="Text" Type="String" />
             </SelectParameters>
