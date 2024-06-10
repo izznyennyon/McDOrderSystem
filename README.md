@@ -52,5 +52,5 @@ This project is a group assignment for our course, where we developed a web appl
 6. **Build and run the application:**
 - Press F5 in Visual Studio to build and run the application.
 
-- 
+
 
