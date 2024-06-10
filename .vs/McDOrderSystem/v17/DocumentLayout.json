@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\CourseProject\\McDOrderSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\333\\OneDrive - Universiti Kuala Lumpur\\Desktop\\Web Application Development\\Assignment\\McDOrderSystem\\",
   "Documents": [],
   "DocumentGroupContainers": [
     {
@@ -17,15 +17,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             }
           ]
         }
