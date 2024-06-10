@@ -33,7 +33,7 @@ namespace McDOrderSystem.UserControl
         protected void btnLogout_Click(object sender, EventArgs e)
         {
             Session.Clear();
-            Response.Redirect("Default.aspx");
+            Response.Redirect("Login.aspx");
         }
     }
 }
