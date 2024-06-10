@@ -71,9 +71,49 @@
     <Content Include="App_Data\OnlineMcDDb_log.ldf">
       <DependentUpon>OnlineMcDDb.mdf</DependentUpon>
     </Content>
+    <Content Include="Images\100Plus.png" />
+    <Content Include="Images\Americano.png" />
+    <Content Include="Images\Americano_Espresso.png" />
+    <Content Include="Images\apple_pie.png" />
+    <Content Include="Images\beefburger.png" />
+    <Content Include="Images\bigmac.png" />
+    <Content Include="Images\brownie_sundae.png" />
+    <Content Include="Images\buburayammcd.png" />
+    <Content Include="Images\Cappuccino.png" />
+    <Content Include="Images\cheeseburger.png" />
+    <Content Include="Images\chocolate_chip_cookie.jfif" />
+    <Content Include="Images\chocolate_sundae.png" />
+    <Content Include="Images\doublecheeseburger.png" />
+    <Content Include="Images\Drinking_Water.jpg" />
+    <Content Include="Images\filetofish.png" />
+    <Content Include="Images\gcb.png" />
+    <Content Include="Images\hot_caramel_sundae.jfif" />
+    <Content Include="Images\Hot_Chocolate.png" />
+    <Content Include="Images\hot_fudge_sundae.png" />
+    <Content Include="Images\Hot_Latte.png" />
+    <Content Include="Images\Hot_Milo.png" />
+    <Content Include="Images\Iced_Americano.png" />
+    <Content Include="Images\Iced_Chocolate.png" />
+    <Content Include="Images\Iced_Latte.png" />
+    <Content Include="Images\Iced_Lemon_Tea.png" />
+    <Content Include="Images\Iced_Milo.png" />
+    <Content Include="Images\Ice_Blended_Mocha.png" />
+    <Content Include="Images\mcchicken.png" />
+    <Content Include="Images\mcflurry_mms.jfif" />
+    <Content Include="Images\mcflurry_oreo.png" />
+    <Content Include="Images\Mocha.png" />
+    <Content Include="Images\nasilemakmcd.jpg" />
+    <Content Include="Images\Orange_Juice.png" />
+    <Content Include="Images\Small_Espresso.png" />
+    <Content Include="Images\Soft_Drink.png" />
+    <Content Include="Images\spicychickenmcdeluxe.png" />
+    <Content Include="Images\strawberry_sundae.png" />
+    <Content Include="Images\vanilla_cone.jfif" />
     <Content Include="Index.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\mcd-logo.png" />
+    <Content Include="McDOrder.aspx" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="Styles\StyleSheet.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -94,6 +134,13 @@
     </Compile>
     <Compile Include="Mcd.Master.designer.cs">
       <DependentUpon>Mcd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="McDOrder.aspx.cs">
+      <DependentUpon>McDOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="McDOrder.aspx.designer.cs">
+      <DependentUpon>McDOrder.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
