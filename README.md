@@ -34,7 +34,7 @@ This project is a group assignment for our course, where we developed a web appl
 ## Setup and Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git@github.com:izznyennyon/McDOrderSystem.git
 
 2. **Open the project in Visual Studio.**
 
