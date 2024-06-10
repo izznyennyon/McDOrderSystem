@@ -7,47 +7,47 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace McDOrderSystem
+namespace McDOrderSystem.UserControl
 {
 
 
-    public partial class Mcd
+    public partial class LoginStatus1
     {
 
         /// <summary>
-        /// head control.
+        /// HyperLinkLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkLogin;
 
         /// <summary>
-        /// form1 control.
+        /// HyperLinkRegister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkRegister;
 
         /// <summary>
-        /// LoginStatus control.
+        /// lblLoginStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::McDOrderSystem.UserControl.LoginStatus1 LoginStatus;
+        protected global::System.Web.UI.WebControls.Label lblLoginStatus;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// btnLogout control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Button btnLogout;
     }
 }

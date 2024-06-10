@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin.aspx" />
     <Content Include="App_Data\OnlineMcDDb.mdf" />
     <Content Include="App_Data\OnlineMcDDb_log.ldf">
       <DependentUpon>OnlineMcDDb.mdf</DependentUpon>
@@ -112,12 +113,22 @@
     <Content Include="Index.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\mcd-logo.png" />
+    <Content Include="Login.aspx" />
     <Content Include="McDOrder.aspx" />
+    <Content Include="Register.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Styles\StyleSheet.css" />
+    <Content Include="usercontrols\LoginStatus.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -127,6 +138,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Mcd.Master.cs">
       <DependentUpon>Mcd.Master</DependentUpon>
@@ -142,7 +160,22 @@
     <Compile Include="McDOrder.aspx.designer.cs">
       <DependentUpon>McDOrder.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PBKDF2Hash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\LoginStatus.ascx.cs">
+      <DependentUpon>LoginStatus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usercontrols\LoginStatus.ascx.designer.cs">
+      <DependentUpon>LoginStatus.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Mcd.Master" />
