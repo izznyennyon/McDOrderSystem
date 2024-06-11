@@ -55,7 +55,7 @@ namespace McDOrderSystem
 
                     else if (Session["Role"].ToString() == "admin")
 
-                        Response.Redirect("Admin.aspx");
+                        Response.Redirect("Report.aspx");
                 }
                 else
                 {
