@@ -116,3 +116,13 @@ D:\GitHub\WADProject\McDOrderSystem\bin\roslyn\vbc.exe.config
 D:\GitHub\WADProject\McDOrderSystem\bin\roslyn\vbc.rsp
 D:\GitHub\WADProject\McDOrderSystem\bin\roslyn\VBCSCompiler.exe
 D:\GitHub\WADProject\McDOrderSystem\bin\roslyn\VBCSCompiler.exe.config
+D:\WebAppProject\Test\McDOrderSystem\McDOrderSystem\bin\McDOrderSystem.dll.config
+D:\WebAppProject\Test\McDOrderSystem\McDOrderSystem\bin\McDOrderSystem.dll
+D:\WebAppProject\Test\McDOrderSystem\McDOrderSystem\bin\McDOrderSystem.pdb
+D:\WebAppProject\Test\McDOrderSystem\McDOrderSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WebAppProject\Test\McDOrderSystem\McDOrderSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WebAppProject\Test\McDOrderSystem\McDOrderSystem\obj\Debug\McDOrderSystem.csproj.AssemblyReference.cache
+D:\WebAppProject\Test\McDOrderSystem\McDOrderSystem\obj\Debug\McDOrderSystem.csproj.CoreCompileInputs.cache
+D:\WebAppProject\Test\McDOrderSystem\McDOrderSystem\obj\Debug\McDOrder.D8B97F2E.Up2Date
+D:\WebAppProject\Test\McDOrderSystem\McDOrderSystem\obj\Debug\McDOrderSystem.dll
+D:\WebAppProject\Test\McDOrderSystem\McDOrderSystem\obj\Debug\McDOrderSystem.pdb
