@@ -168,6 +168,33 @@ namespace McDOrderSystem
         protected global::System.Web.UI.WebControls.Label lblMessage2;
 
         /// <summary>
+        /// lblReceiptSalesId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblReceiptSalesId;
+
+        /// <summary>
+        /// lblReceiptDateTime control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblReceiptDateTime;
+
+        /// <summary>
+        /// GridViewReceipt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridViewReceipt;
+
+        /// <summary>
         /// lblTotalAmount control.
         /// </summary>
         /// <remarks>
