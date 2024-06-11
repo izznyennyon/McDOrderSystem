@@ -147,7 +147,7 @@ namespace McDOrderSystem
 
         }
 
-        void DisplayInvoice()
+        /*void DisplayInvoice()
         {
             double serviceTax, amountAfterTax, amountRounded, rounding;
             serviceTax = totalAmount * 0.06;
@@ -160,7 +160,51 @@ namespace McDOrderSystem
             lblAmountAfterTax.Text = "Amount after tax: " + amountAfterTax.ToString("c2");
             lblRounding.Text = "Rounding: " + rounding.ToString("c2");
             lblAmountRounded.Text = "Amount to pay: " + amountRounded.ToString("c2");
+        }*/
+
+        void DisplayInvoice()
+        {
+            // Calculate tax and rounding
+            double serviceTax, amountAfterTax, amountRounded, rounding;
+            serviceTax = totalAmount * 0.06;
+            amountAfterTax = totalAmount + serviceTax;
+            amountRounded = Math.Round((amountAfterTax) / 0.05) * 0.05;
+            rounding = amountRounded - amountAfterTax;
+
+            // Display calculated amounts
+            lblTotalAmount.Text = "Total amount: " + totalAmount.ToString("c2");
+            lblServiceTax.Text = "Service tax (6%): " + serviceTax.ToString("c2");
+            lblAmountAfterTax.Text = "Amount after tax: " + amountAfterTax.ToString("c2");
+            lblRounding.Text = "Rounding: " + rounding.ToString("c2");
+            lblAmountRounded.Text = "Amount to pay: " + amountRounded.ToString("c2");
+
+            // Fetch and display item details in receipt
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["connMcD"].ConnectionString);
+            SqlCommand cmd = new SqlCommand("spSalesGetItems", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@salesid", lblSalesId.Text);
+
+            try
+            {
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    GridViewReceipt.DataSource = reader;
+                    GridViewReceipt.DataBind();
+                }
+                reader.Close();
+            }
+            catch (SqlException ex)
+            {
+                lblMessage2.Text = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
+
 
         void ClearAll()
         {
@@ -208,6 +252,8 @@ namespace McDOrderSystem
         protected void btnComfirm_Click(object sender, EventArgs e)
         {
             SalesConfirm();
+            lblReceiptSalesId.Text = lblSalesId.Text;
+            lblReceiptDateTime.Text = lblDateTime.Text;
             DisplayInvoice();
         }
 
