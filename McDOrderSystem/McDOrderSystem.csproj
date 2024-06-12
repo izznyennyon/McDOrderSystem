@@ -113,6 +113,7 @@
     <Content Include="Index.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\mcd-logo.png" />
+    <Content Include="Login2.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="McDOrder.aspx" />
     <Content Include="Register.aspx" />
@@ -139,6 +140,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login2.aspx.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login2.aspx.designer.cs">
+      <DependentUpon>Login2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
