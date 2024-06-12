@@ -1,93 +1,105 @@
+/* Navbar */
 .navbar {
-  background-color: #FFBA0D; /* Red navbar */
+    background-color: #FFBA0D; /* Yellow navbar */
 }
 
 .navbar-logo {
-  width: auto;  /* Set width to 100px */
-  height: 100px; /* Set height to 100px */
+    width: auto; /* Adjust as needed */
+    height: 100px; /* Set height */
 }
 
-.categories-menu {
-  background-color: #d3d3d3; /* Light gray background */
-  padding: 10px;
-  height: 100vh; /* Set height to full viewport height */
-  position: relative; /* Fix the position to the viewport */
-  left: 0; /* Stick it to the left */
-  top: 0; /* Stick it to the top */
-  display: flex;
-  flex-direction: column;
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #FFBA0D;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.category-links {
-  flex-grow: 1;
+    .login-container h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .login-container p {
+        margin-bottom: 15px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 10px 0;
+        display: inline-block;
+        border: 1px solid #FFBA0D;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .login-container button {
+        width: 100%;
+        background-color: #ffbe33;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .login-container button:hover {
+            background-color: #e69c00;
+        }
+
+    .login-container .status-label {
+        text-align: center;
+        display: block;
+        margin-top: 20px;
+    }
+
+.login-button {
+    width: 100%;
+    background-color: #FFBA0D; /* Yellow background */
+    ;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px; /* Rounded border */
+    ;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.category-link {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+    .login-button:hover {
+        background-color: #e69c00;
+    }
 
-.category-link:hover {
-  color: #FFBA0D;
-}
-
-.bottom-link {
-  margin-top: auto;
-}
-
-
-.category-link:hover {
-  color: #FFBA0D;
-}
-
-.bottom-link {
-  margin-top: auto;
-}
-
-
+/* Title */
 .title {
-  background-color: #DB0007; /* Dark gray background */
-  color: #FFBA0D;
-  text-align: center;
-  padding: 10px 0;
+    background-color: #DB0007; /* Red background colour dekat McD logo */
+    text-align: center;
+    padding: 10px 0;
 }
 
-.menu-section {
-  background-color: #808080; /* Dark gray background */
-  padding: 20px;
-  text-align: center;
-}
-
-.menu-section h2 {
-  margin-bottom: 20px;
-  color: white;
-}
-
-.image-container {
-  background-color: #d3d3d3; /* Light gray background */
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+/* Footer */
 .footer {
-  background-color: #ff6f61; /* Red footer */
-  color: white;
-  text-align: center;
-  padding: 10px 0;
+    background-color: #000; /* Red footer */
+    color: grey;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .view-cart-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-  color: #333; /* Set icon color */
-  text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333; /* Icon color */
+    text-decoration: none;
 }
 
-.view-cart-button:hover {
-  color: #FFBA0D; /* Change icon color on hover */
-}
+    .view-cart-button:hover {
+        color: #FFBA0D; /* Yellow on hover */
+    }

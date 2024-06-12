@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LoginStatus.ascx.cs" Inherits="McDOrderSystem.UserControl.LoginStatus1" %>
+﻿﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LoginStatus.ascx.cs" Inherits="McDOrderSystem.UserControl.LoginStatus1" %>
 <asp:HyperLink ID="HyperLinkLogin" runat="server" NavigateUrl ="~/Login.aspx">Login</asp:HyperLink>
 &nbsp;&nbsp;
 
