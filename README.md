@@ -6,7 +6,7 @@ This project is a group assignment for our course, where we developed a web appl
 ## Team Members
 - Member 1: Afeef (Afeefz2003@gmail.com)
 - Member 2: Ammar (ammarkhair94@gmail.com)
-- Member 3: Izz (izz@gmail.com)
+- Member 3: Izz (izzdanial23@gmail.com)
 - Member 4: Haziq (haziq@gmail.com)
 
 ## Course Learning Outcomes
