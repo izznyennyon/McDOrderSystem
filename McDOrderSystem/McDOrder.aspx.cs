@@ -16,6 +16,11 @@ namespace McDOrderSystem
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            //pervent those without the proper credentials to access a particular page
+            if (Session["Role"] == null)
+                Response.Redirect("Login.aspx");
+
             if (!IsPostBack)
             {
 
