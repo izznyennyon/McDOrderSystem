@@ -67,7 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Admin.aspx" />
     <Content Include="App_Data\OnlineMcDDb.mdf" />
     <Content Include="App_Data\OnlineMcDDb_log.ldf">
       <DependentUpon>OnlineMcDDb.mdf</DependentUpon>
@@ -121,16 +120,8 @@
     <Content Include="Styles\StyleSheet.css" />
     <Content Include="usercontrols\LoginStatus.ascx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin.aspx.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin.aspx.designer.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -184,13 +175,6 @@
     </Compile>
     <Compile Include="usercontrols\LoginStatus.ascx.designer.cs">
       <DependentUpon>LoginStatus.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

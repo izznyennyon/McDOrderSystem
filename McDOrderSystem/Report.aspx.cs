@@ -14,6 +14,11 @@ namespace McDOrderSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["Role"] == null || Session["Role"].ToString() != "admin")
+            {
+                Response.Redirect("Login.aspx");
+            }
+
             if (!IsPostBack)
             {
                 BindSummary();
