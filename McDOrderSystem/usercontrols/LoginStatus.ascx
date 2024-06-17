@@ -7,4 +7,4 @@
 
 <asp:Label ID="lblLoginStatus" runat="server"></asp:Label> &nbsp;&nbsp;
 
-<asp:Button ID="btnLogout" runat="server" Text="Logut" OnClick="btnLogout_Click" style="height: 35px" />
+<asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" style="height: 35px" />
