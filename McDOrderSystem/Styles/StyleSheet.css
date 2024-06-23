@@ -1,3 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+    /* Ensure elements within .container-fluid do not cause overflow */
+    .container-fluid * {
+        box-sizing: border-box;
+    }
+
+/* Optional: Apply a global reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure body takes full viewport height */
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Ensure the footer stays at the bottom if the content is short */
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
 /* Navbar */
 .navbar {
     background-color: #FFBA0D; /* Yellow navbar */
@@ -6,6 +43,29 @@
 .navbar-logo {
     width: auto; /* Adjust as needed */
     height: 100px; /* Set height */
+}
+
+.login-status-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add space between items */
+    padding-left: 15px; /* Add padding to the left */
+}
+
+/* Style for the login links */
+.login-link {
+    margin-right: 10px; /* Add margin to the right */
+}
+
+/* Style for the login status label */
+.login-status-label {
+    margin-right: 10px; /* Add margin to the right */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Style for the logout button */
+.logout-button {
+    height: 35px;
 }
 
 .login-container {
