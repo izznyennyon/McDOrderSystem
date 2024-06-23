@@ -1,12 +1,24 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Mcd.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="McDOrderSystem.Register" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+    @font-face {
+        font-family: 'FormulaSerialExtraBold';
+        src: url('fonts/Formula-Serial-Extrabold-Regular.ttf') format('truetype');
+        font-family: 'KOMIKAX';
+        src: url('fonts/KOMIKAX_.ttf') format('truetype');
+    }
+
+        .custom-font {
+        font-family: 'KOMIKAX', sans-serif; /* Apply the custom font */
+    }
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="login-container">
-    <h1>Register</h1>
+    <h1 class="custom-font">Register</h1>
     <p>
-        <label for="txtUserName">Enter email as your username:</label>
-        <asp:TextBox ID="txtUserName" runat="server" CssClass="login-input" Placeholder="Email"></asp:TextBox>
+        <label for="txtUserName">Enter your username:</label>
+        <asp:TextBox ID="txtUserName" runat="server" CssClass="login-input" Placeholder="Username"></asp:TextBox>
     </p>
     <p>
         <label for="txtPassword">Enter Password:</label>

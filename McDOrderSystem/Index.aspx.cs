@@ -14,6 +14,16 @@ namespace McDOrderSystem
 
         }
 
-    
+        protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            if (e.CommandName == "AddToCart")
+            {
+                // Get the item title from CommandArgument
+                string itemTitle = e.CommandArgument.ToString();
+
+                // Redirect to Login.aspx
+                Response.Redirect("Login.aspx");
+            }
+        }
     }
 }

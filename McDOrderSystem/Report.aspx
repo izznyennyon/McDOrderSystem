@@ -51,7 +51,7 @@
         <asp:GridView ID="gvSummary" runat="server" AutoGenerateColumns="False" CssClass="gridview">
             <Columns>
                 <asp:BoundField DataField="TotalSales" HeaderText="Total Sales" />
-                <asp:BoundField DataField="TotalRevenue" HeaderText="Total Revenue" />
+                <asp:BoundField DataField="TotalRevenue" HeaderText="Total Revenue" DataFormatString="{0:c2}" />
                 <asp:BoundField DataField="TotalItemsSold" HeaderText="Total Items Sold" />
             </Columns>
         </asp:GridView>
