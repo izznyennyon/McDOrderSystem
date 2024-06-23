@@ -1,9 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="McDOrder.aspx.cs" Inherits="McDOrderSystem.McDOrder" MasterPageFile="~/Mcd.master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>McD Order</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container">
+       <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <h4>Sales Items</h4>
@@ -78,6 +79,10 @@
                         <asp:Label ID="lblReceiptSalesId" runat="server" Text=""></asp:Label>&nbsp;|
                         Date and time:
                         <asp:Label ID="lblReceiptDateTime" runat="server" Text=""></asp:Label>
+                    </p>
+                    <p>
+                        Username:
+                        <asp:Label ID="lblUsername" runat="server" Text=""></asp:Label>
                     </p>
                     <p>
                         <asp:GridView ID="GridViewReceipt" runat="server" AutoGenerateColumns="False" CssClass="table table-striped">

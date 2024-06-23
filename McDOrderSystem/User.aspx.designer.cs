@@ -11,17 +11,8 @@ namespace McDOrderSystem
 {
 
 
-    public partial class Report
+    public partial class User
     {
-
-        /// <summary>
-        /// gvSummary control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvSummary;
 
         /// <summary>
         /// GridView1 control.
@@ -33,21 +24,21 @@ namespace McDOrderSystem
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// btnUser control.
+        /// btnReport control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnUser;
+        protected global::System.Web.UI.WebControls.Button btnReport;
 
         /// <summary>
-        /// SqlDataReport control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataReport;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }
