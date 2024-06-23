@@ -1,0 +1,31 @@
+Sales table:
+CREATE TABLE Sales (
+    [SalesId]   VARCHAR (10) NOT NULL,
+    [Username]  VARCHAR (50) NULL,
+    [ItemId]    INT          NOT NULL,
+    [Quantity]  INT          NULL,
+    [SalesDate] DATETIME     NULL,
+    [Confirmed] BIT          DEFAULT ((0)) NOT NULL,
+    PRIMARY KEY CLUSTERED ([SalesId] ASC, [ItemId] ASC)
+);
+
+Stored Procedure:
+CREATE PROCEDURE spSalesAddItem
+@salesid varchar (10),
+@username varchar(50),
+@itemid int,
+@quantity int
+AS
+IF NOT EXISTS (SELECT SalesId FROM Sales WHERE ItemId = @itemid AND SalesId = @salesid)
+        INSERT INTO Sales VALUES (@salesid, @username, @itemid, @quantity, GETDATE(), 0)
+ ELSE
+       UPDATE Sales SET Quantity = @quantity 
+	   WHERE ItemId = @itemid AND SalesId = @salesid
+
+DELETE FROM SALES WHERE Quantity = 0;
+
+CREATE PROCEDURE spSalesConfirm
+	@salesid VARCHAR(10),
+	@username varchar(50)
+AS
+UPDATE Sales SET Confirmed = 1 WHERE SalesId = @salesid AND Username = @username;
