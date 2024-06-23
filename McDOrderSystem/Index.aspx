@@ -55,7 +55,7 @@
             ConnectionString="<%$ ConnectionStrings:connMcD %>"
             SelectCommand="SELECT [ItemTitle], [ItemPrice], [ItemImage] FROM [Items]"></asp:SqlDataSource>
 
-        <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1" OnItemCommand="Repeater1_ItemCommand">
+        <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
             <ItemTemplate>
                 <div class="card">
                     <img src='images/<%# Eval("ItemImage") %>' alt='<%# Eval("ItemTitle") %>' />
