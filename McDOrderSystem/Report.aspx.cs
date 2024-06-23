@@ -22,7 +22,6 @@ namespace McDOrderSystem
             if (!IsPostBack)
             {
                 BindSummary();
-                BindDetails();
             }
         }
 
@@ -40,25 +39,6 @@ namespace McDOrderSystem
             DataTable dt = GetData(query);
             gvSummary.DataSource = dt;
             gvSummary.DataBind();
-        }
-
-        private void BindDetails()
-        {
-            string query = @"
-                SELECT 
-                    s.SalesId, 
-                    i.ItemTitle, 
-                    s.Quantity, 
-                    s.SalesDate, 
-                    i.ItemPrice
-                FROM Sales s
-                JOIN Items i ON s.ItemId = i.ItemId
-                WHERE s.Confirmed = 1
-                ORDER BY s.SalesDate DESC";
-
-            DataTable dt = GetData(query);
-            gvDetails.DataSource = dt;
-            gvDetails.DataBind();
         }
 
         private DataTable GetData(string query)
@@ -82,5 +62,9 @@ namespace McDOrderSystem
             }
         }
 
+        protected void btnUser_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("User.aspx");
+        }
     }
 }

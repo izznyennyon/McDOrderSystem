@@ -118,6 +118,7 @@
     <Content Include="Report.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Styles\StyleSheet.css" />
+    <Content Include="User.aspx" />
     <Content Include="usercontrols\LoginStatus.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -168,6 +169,13 @@
     </Compile>
     <Compile Include="Report.aspx.designer.cs">
       <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
     </Compile>
     <Compile Include="usercontrols\LoginStatus.ascx.cs">
       <DependentUpon>LoginStatus.ascx</DependentUpon>

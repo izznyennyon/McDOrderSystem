@@ -24,6 +24,7 @@ namespace McDOrderSystem
             if (!IsPostBack)
             {
 
+                lblUsername.Text = Session["UserName"]?.ToString();  // Set the username from session
                 GenerateSalesId();
             }
 
@@ -59,6 +60,7 @@ namespace McDOrderSystem
             cmd.Parameters.AddWithValue("@salesid", lblSalesId.Text);
             cmd.Parameters.AddWithValue("@itemid", lblItemId.Text);
             cmd.Parameters.AddWithValue("@quantity", txtQuantity.Text);
+            cmd.Parameters.AddWithValue("@username", lblUsername.Text);
 
             try
             {
@@ -131,6 +133,7 @@ namespace McDOrderSystem
             // Set command object for stored procedure execution
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@salesid", lblSalesId.Text);
+            cmd.Parameters.AddWithValue("@username", lblUsername.Text);
 
             try
             {
@@ -182,6 +185,7 @@ namespace McDOrderSystem
             lblAmountAfterTax.Text = "Amount after tax: " + amountAfterTax.ToString("c2");
             lblRounding.Text = "Rounding: " + rounding.ToString("c2");
             lblAmountRounded.Text = "Amount to pay: " + amountRounded.ToString("c2");
+            lblUsername.Text = Session["UserName"].ToString();
 
             // Fetch and display item details in receipt
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["connMcD"].ConnectionString);
