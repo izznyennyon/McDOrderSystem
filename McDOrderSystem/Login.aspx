@@ -18,8 +18,8 @@
     <div class="login-container">
         <h1 class="custom-font">Log in</h1>
         <p>
-            <label for="txtUserName">Enter email as your username:</label>
-            <asp:TextBox ID="txtUserName" runat="server" CssClass="login-input" Placeholder="Email"></asp:TextBox>
+            <label for="txtUserName">Enter your username:</label>
+            <asp:TextBox ID="txtUserName" runat="server" CssClass="login-input" Placeholder="Username"></asp:TextBox>
         </p>
         <p>
             <label for="txtPassword">Enter Password:</label>
