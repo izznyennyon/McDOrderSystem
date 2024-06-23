@@ -103,3 +103,9 @@
     .view-cart-button:hover {
         color: #FFBA0D; /* Yellow on hover */
     }
+
+.card img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
