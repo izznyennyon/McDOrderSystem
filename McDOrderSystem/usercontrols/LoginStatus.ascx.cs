@@ -14,6 +14,7 @@ namespace McDOrderSystem.UserControl
             if (Session["UserName"] != null && Session["Role"] != null)
             {
                 //user is logged in
+                HyperLinkIndex.Visible = false;
                 HyperLinkLogin.Visible = false;
                 HyperLinkRegister.Visible = false;
                 btnLogout.Visible = true;
@@ -22,6 +23,7 @@ namespace McDOrderSystem.UserControl
             else
             {
                 //user is not logged in
+                HyperLinkIndex.Visible = true;
                 HyperLinkLogin.Visible = true;
                 HyperLinkRegister.Visible = true;
                 btnLogout.Visible = false;
