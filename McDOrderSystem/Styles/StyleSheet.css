@@ -64,7 +64,7 @@ html, body {
 
 .login-container {
     max-width: 400px;
-    margin: 50px auto;
+    margin: 100px auto;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #FFBA0D;
@@ -116,12 +116,12 @@ html, body {
 .login-button {
     width: 100%;
     background-color: #FFBA0D; /* Yellow background */
-    ;
+    
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 20px; /* Rounded border */
-    ;
+    
     cursor: pointer;
     font-weight: bold;
 }
