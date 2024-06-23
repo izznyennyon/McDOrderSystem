@@ -27,6 +27,6 @@
     <p>
         <asp:Button ID="btnRegister" runat="server" Text="REGISTER" CssClass="login-button" OnClick="btnRegister_Click" />
     </p>
-    <asp:Label ID="lblMessage" runat="server" Text="Status:" CssClass="status-label"></asp:Label>
+    <asp:Label ID="lblMessage" runat="server" CssClass="status-label"></asp:Label>
 </div>
 </asp:Content>
