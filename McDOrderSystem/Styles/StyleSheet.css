@@ -28,12 +28,6 @@ html, body {
     overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-/* Ensure the footer stays at the bottom if the content is short */
-.footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
 
 /* Navbar */
 .navbar {
@@ -144,8 +138,11 @@ html, body {
 }
 
 /* Footer */
+
+
 .footer {
-    background-color: #000; /* Red footer */
+    position: relative;
+    background-color: #000;
     color: grey;
     text-align: center;
     padding: 10px 0;
